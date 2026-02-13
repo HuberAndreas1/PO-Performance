@@ -1,0 +1,41 @@
+<div class="dashboard">
+  <header class="dashboard-header">
+    <h1>🏋️ PO-Performance Dashboard</h1>
+    <p class="subtitle">Track your progressive overload</p>
+  </header>
+
+  <!-- TODO: Exercise Table -->
+  <!-- Implement a table listing all exercises from GET /api/exercises -->
+  <!-- Columns: Exercise Name, Last Session Date, Current 1RM, Max Weight, Status -->
+  <!-- Highlight rows where isPlateau is true with the CSS class "plateau" -->
+  <!-- Clicking a row should select the exercise and load its history -->
+  <section class="table-section">
+    <h2>Exercises</h2>
+    <table class="exercise-table">
+      <thead>
+        <tr>
+          <th>Exercise</th>
+          <th>Last Session</th>
+          <th>Current 1RM</th>
+          <th>Max Weight</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- TODO: Use @for to iterate over exercises and create table rows -->
+        <!-- Use the CSS classes "plateau" and "selected" on <tr> for styling -->
+        <!-- Use the CSS classes "plateau-badge" and "progress-badge" on status <span> -->
+        <tr>
+          <td colspan="5" class="empty-state">No exercises found. Import a training log first.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- TODO: Chart Section -->
+  <!-- When an exercise is selected, show the CyberLiftChartComponent below -->
+  <!-- Use: <app-cyberlift-chart [oneRepMaxData]="..." [maxWeightData]="..." [highlightPlateaus]="..." /> -->
+  <section class="chart-section empty-chart">
+    <p>👆 Select an exercise from the table above to view its progression charts.</p>
+  </section>
+</div>

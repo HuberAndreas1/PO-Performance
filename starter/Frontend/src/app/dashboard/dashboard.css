@@ -1,0 +1,157 @@
+.dashboard {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+/* Header */
+.dashboard-header {
+  margin-bottom: 32px;
+}
+
+.dashboard-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.dashboard-header .subtitle {
+  color: #6b7280;
+  margin: 4px 0 0;
+  font-size: 0.95rem;
+}
+
+/* Table Section */
+.table-section {
+  margin-bottom: 32px;
+}
+
+.table-section h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 12px;
+}
+
+.exercise-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.exercise-table thead {
+  background: #f9fafb;
+}
+
+.exercise-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.exercise-table td {
+  padding: 14px 16px;
+  font-size: 0.925rem;
+  color: #374151;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.exercise-table tbody tr {
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.exercise-table tbody tr:hover {
+  background: #f0f9ff;
+}
+
+.exercise-table tbody tr.selected {
+  background: #eff6ff;
+  border-left: 3px solid #3b82f6;
+}
+
+/* Plateau row highlighting */
+.exercise-table tbody tr.plateau {
+  background: #fef2f2;
+}
+
+.exercise-table tbody tr.plateau:hover {
+  background: #fee2e2;
+}
+
+.exercise-table tbody tr.plateau.selected {
+  background: #fee2e2;
+  border-left: 3px solid #ef4444;
+}
+
+/* Cell styles */
+.name-cell {
+  font-weight: 600;
+}
+
+.number-cell {
+  font-variant-numeric: tabular-nums;
+  font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+}
+
+.status-cell {
+  white-space: nowrap;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 16px !important;
+  color: #9ca3af;
+  font-style: italic;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.plateau-badge {
+  background: #fecaca;
+  color: #991b1b;
+}
+
+.progress-badge {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+/* Chart Section */
+.chart-section {
+  margin-top: 8px;
+}
+
+.chart-section h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 16px;
+}
+
+.empty-chart {
+  text-align: center;
+  padding: 48px 24px;
+  background: #f9fafb;
+  border-radius: 12px;
+  border: 2px dashed #d1d5db;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
