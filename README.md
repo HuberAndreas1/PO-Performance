@@ -9,8 +9,6 @@ In their facilities, every member carries a "SmartPass" card. When a member appr
 
 At the end of a training session, the SmartPass contains a raw log of all exercises performed. CyberLift needs a "Sync Station" web application where these logs can be uploaded, processed, and visualized to help members track their performance over time.
 
----
-
 ## 2. Data Model
 
 The data model is part of the starter code (`DatabaseModel.cs`). Use it as it is. You do not need to modify it.
@@ -34,13 +32,9 @@ The data model is part of the starter code (`DatabaseModel.cs`). Use it as it is
 * **Calculated1RM** (double, calculated value for progress tracking)
 * **IsPlateau** (boolean, flag to indicate if strength progression has stalled)
 
----
-
 ## 3. Import File Format
 
 You can find the detailed, technical specification of the exercise import file format in the [file-format-spec.md](./file-format-spec.md) document. The `data/` folder contains sample import files for testing purposes (valid and invalid ones). Make yourself familiar with the format before you start implementing the importer tool.
-
----
 
 ## 4. Non-Trivial Business Logic
 
@@ -79,7 +73,6 @@ After calculating the 1RM for the current session's sets, perform the following 
 * *Current Max:* 100.5kg.
 * *Result:* $100.5 < 101$, therefore **Plateau Detected**.
 
----
 
 ## 5. Technical Requirements - Web API & Frontend
 
